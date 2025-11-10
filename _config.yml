@@ -1,0 +1,29 @@
+title: Academic Website
+description: Personal academic website
+baseurl: ""
+url: "https://mercush.github.io"
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Navigation
+header_pages:
+  - index.md
+  - papers.md
+  - talks.md
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .sass-cache
+  - .jekyll-cache
+  - .jekyll-metadata

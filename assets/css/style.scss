@@ -1,0 +1,170 @@
+---
+---
+
+@import "minima";
+
+// Custom variables
+$text-color: #111;
+$background-color: #fdfdfd;
+$brand-color: #2a7ae2;
+$grey-color: #828282;
+$grey-color-light: #e8e8e8;
+
+// Typography
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: $text-color;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.2rem;
+  border-bottom: 2px solid $grey-color-light;
+  padding-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: $brand-color;
+}
+
+h3 {
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
+}
+
+// Layout
+.site-header {
+  border-bottom: 1px solid $grey-color-light;
+  min-height: 56px;
+  position: relative;
+  background-color: $background-color;
+}
+
+.site-title {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 56px;
+  letter-spacing: -0.5px;
+  margin-bottom: 0;
+  float: left;
+  color: $text-color;
+  
+  &:hover {
+    text-decoration: none;
+    color: $brand-color;
+  }
+}
+
+.site-nav {
+  float: right;
+  line-height: 56px;
+  
+  .page-link {
+    margin-left: 20px;
+    color: $grey-color;
+    font-weight: 500;
+    
+    &:hover {
+      color: $brand-color;
+      text-decoration: none;
+    }
+  }
+}
+
+.page-content {
+  padding: 40px 0;
+  flex: 1;
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.site-footer {
+  border-top: 1px solid $grey-color-light;
+  padding: 30px 0;
+  color: $grey-color;
+  font-size: 0.9rem;
+}
+
+// Content styling
+.post-list {
+  margin-left: 0;
+  list-style: none;
+}
+
+.post-meta {
+  font-size: 0.9rem;
+  color: $grey-color;
+}
+
+// Links
+a {
+  color: $brand-color;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  
+  &:hover {
+    color: darken($brand-color, 15%);
+    text-decoration: underline;
+  }
+}
+
+// Paper and talk styling
+.paper-item, .talk-item {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid $grey-color-light;
+  
+  &:last-child {
+    border-bottom: none;
+  }
+  
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+  
+  .authors, .event {
+    color: $grey-color;
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .links {
+    margin-top: 0.5rem;
+    
+    a {
+      margin-right: 15px;
+      font-size: 0.9rem;
+    }
+  }
+}
+
+// Responsive
+@media screen and (max-width: 600px) {
+  .site-title {
+    font-size: 22px;
+  }
+  
+  .site-nav .page-link {
+    margin-left: 10px;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+}
