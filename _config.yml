@@ -23,7 +23,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   MEng student at MIT working on probabilistic inference, program synthesis,
   and efficient language-model inference.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://mercush.github.io" # the base hostname & protocol for your site
+url: "https://mauriciobarbadacosta.com" # the base hostname & protocol for your site
 github_username: mercush
 
 # Build settings
