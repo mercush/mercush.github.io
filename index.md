@@ -16,7 +16,7 @@ layout: default
 <article class="paper">
   <h3><a href="https://arxiv.org/abs/2604.15672">Faster LLM Inference via Sequential Monte Carlo</a></h3>
   <p class="authors">Yahya Emara*, <span class="me">Mauricio Barba da Costa*</span>, Chi-Chih Chang, Cameron Freer, Tim Vieira, Ryan Cotterell, Mohamed S. Abdelfattah</p>
-  <p class="venue">90th percentile of reviews at COLM &mdash; <a href="https://arxiv.org/abs/2604.15672">arXiv</a></p>
+  <p class="venue">90th percentile of reviews at COLM, 2026 &mdash; <a href="https://arxiv.org/abs/2604.15672">arXiv</a></p>
 </article>
 
 <article class="paper">
