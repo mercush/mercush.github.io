@@ -34,7 +34,7 @@ layout: default
 <article class="paper">
   <h3><a href="https://arxiv.org/pdf/2510.10930">Evaluating Language Models' Evaluations of Games</a></h3>
   <p class="authors">Katherine M. Collins, Cedegao E. Zhang, Graham Todd, Lance Ying, <span class="me">Mauricio Barba da Costa</span>, Ryan Liu, Prafull Sharma, Adrian Weller, Ionatan Kuperwajs, Lionel Wong, Joshua B. Tenenbaum, Thomas L. Griffiths</p>
-  <p class="venue">ICLR, 2025 &mdash; <a href="https://arxiv.org/pdf/2510.10930">arXiv</a></p>
+  <p class="venue">ICLR, 2026 &mdash; <a href="https://arxiv.org/pdf/2510.10930">arXiv</a></p>
 </article>
 
 <article class="paper">
