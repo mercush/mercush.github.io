@@ -49,7 +49,7 @@ layout: default
 <article class="paper">
   <h3><a href="https://popl26.sigplan.org/details/lafi-2026-papers/2/Sequential-Monte-Carlo-Program-Synthesis-with-Refinement-Proposals">Sequential Monte Carlo Program Synthesis with Refinement Proposals</a></h3>
   <p class="authors">Maddy Bowers, <span class="me">Mauricio Barba da Costa</span>, Xiaoyan Wang, Joshua B. Tenenbaum, Vikash K. Mansinghka, Armando Solar-Lezama, Alexander K. Lew</p>
-  <p class="venue">LAFI workshop at PLDI, 2025 &mdash; <a href="https://popl26.sigplan.org/details/lafi-2026-papers/2/Sequential-Monte-Carlo-Program-Synthesis-with-Refinement-Proposals">paper</a></p>
+  <p class="venue">LAFI workshop at POPL, 2025 &mdash; <a href="https://popl26.sigplan.org/details/lafi-2026-papers/2/Sequential-Monte-Carlo-Program-Synthesis-with-Refinement-Proposals">paper</a></p>
 </article>
 
 <article class="paper">
