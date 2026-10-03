@@ -55,5 +55,5 @@ layout: default
 <article class="paper">
   <h3>Automatic Geometry Theorem Proving Using Polynomial Elaboration</h3>
   <p class="authors"><span class="me">Mauricio Barba da Costa</span>, Fabian Zaiser, Cameron Freer, Josh Tenenbaum, Vikash Mansinghka</p>
-  <p class="venue">ITP 2025 Lean Workshop &mdash; <a href="{{ '/GenLean.pdf' | relative_url }}">Slides</a></p>
+  <p class="venue">ITP 2025 Lean Workshop &mdash; <a href="{{ '/GenLean.pdf' | relative_url }}">slides</a></p>
 </article>
