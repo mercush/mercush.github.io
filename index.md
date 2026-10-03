@@ -16,20 +16,20 @@ layout: default
 <article class="paper">
   <h3><a href="{{ '/iclr2027_conference.pdf' | relative_url }}">A Closer Look at Power Sampling</a></h3>
   <p class="authors"><span class="me">Mauricio Barba da Costa</span>, Ryan Cotterell</p>
-  <p class="venue">Submitted to ICLR 2027 &mdash; <a href="{{ '/iclr2027_conference.pdf' | relative_url }}">paper</a></p>
+  <p class="venue">Preprint &mdash; <a href="{{ '/iclr2027_conference.pdf' | relative_url }}">paper</a></p>
 </article>
 
 <article class="paper">
   <h3><a href="https://arxiv.org/abs/2604.15672">Faster LLM Inference via Sequential Monte Carlo</a></h3>
   <p class="authors">Yahya Emara*, <span class="me">Mauricio Barba da Costa*</span>, Chi-Chih Chang, Cameron Freer, Tim Vieira, Ryan Cotterell, Mohamed S. Abdelfattah</p>
-  <p class="venue">Submitted to ICLR 2027 &mdash; <a href="https://arxiv.org/abs/2604.15672">paper</a> &middot; <a href="https://www.youtube.com/shorts/ypIwbrrTZ5c">semianalysis</a> &middot; <a href="https://abdelfattah-lab.github.io/blogs/smcsd-engine-v0-2-0/">blog post</a></p>
+  <p class="venue">Preprint &mdash; <a href="https://arxiv.org/abs/2604.15672">paper</a> &middot; <a href="https://www.youtube.com/shorts/ypIwbrrTZ5c">semianalysis</a> &middot; <a href="https://abdelfattah-lab.github.io/blogs/smcsd-engine-v0-2-0/">blog post</a></p>
 </article>
 
 
 <article class="paper">
   <h3><a href="https://www.nature.com/articles/s41586-026-10722-1">People Use Fast, Flat Goal-Directed Simulation to Reason about Novel Problems</a></h3>
   <p class="authors">Katherine M. Collins*, Cedegao E. Zhang*, Lionel Wong*, <span class="me">Mauricio Barba da Costa</span>*, Graham Todd*, Adrian Weller, Samuel J. Cheyette, Thomas L. Griffiths, Joshua B. Tenenbaum</p>
-  <p class="venue">Nature, 2026 &mdash; <a href="https://www.nature.com/articles/s41586-026-10722-1">paper</a> &middot; <a href="https://www.nature.com/articles/d41586-026-02221-0?utm_source=x&amp;utm_medium=social&amp;utm_campaign=nature&amp;linkId=62780150">Nature podcast</a> (starting at 10:59)</p>
+  <p class="venue">Nature, 2026 &mdash; <a href="https://www.nature.com/articles/s41586-026-10722-1">paper</a> &middot; <a href="https://www.nature.com/articles/d41586-026-02221-0?utm_source=x&amp;utm_medium=social&amp;utm_campaign=nature&amp;linkId=62780150">nature podcast</a> (starting at 10:59)</p>
 </article>
 
 <article class="paper">
