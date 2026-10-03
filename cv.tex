@@ -1,0 +1,245 @@
+%------------------------------------------------------------------------------
+% CV in Latex
+% Author : Charles Rambo
+% Based off of: https://github.com/sb2nov/resume and Jake's Resume on Overleaf
+% Most recently updated version may be found at https://github.com/fizixmastr 
+% License : MIT
+%------------------------------------------------------------------------------
+
+% \documentclass[A4,11pt]{article}
+\documentclass[letterpaper,10pt]{article} %For use in US
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[colorlinks=true, urlcolor=blue, linkcolor=black, citecolor=black]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{tikz}
+\input{glyphtounicode}
+
+
+% serif
+ \usepackage{palatino}
+% \usepackage{times} %This is the default as well
+% \usepackage{charter}
+
+% sans-serif
+% \usepackage{helvet}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+%-----PAGE SETUP---------------------------------------------------------------
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-1cm}
+\addtolength{\evensidemargin}{-1cm}
+\addtolength{\textwidth}{2cm}
+\addtolength{\topmargin}{-2cm}
+\addtolength{\textheight}{3cm}
+
+% Margins for US Letter size
+%\addtolength{\oddsidemargin}{-0.5in}
+%\addtolength{\evensidemargin}{-0.5in}
+%\addtolength{\textwidth}{1in}
+%\addtolength{\topmargin}{-.5in}
+%\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0cm}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that .pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-----CUSTOM COMMANDS FOR FORMATTING SECTIONS----------------------------------
+\newcommand{\CVItem}[1]{
+  \item\small{
+    {#1 \vspace{-3pt}}
+  }
+}
+
+\newcommand{\CVSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \small#3 & \small #4 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\CVEducationSubheading}[6]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \small#3 & \small #4 \\
+      \small#5 & \small #6
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\CVSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \text{\small#1} & \text{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\CVSubItem}[1]{\CVItem{#1}\vspace{-5pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\CVSubHeadingListStart}{\begin{itemize}[leftmargin=0.5cm, label={}]}
+% \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]} % Uncomment for US
+\newcommand{\CVSubHeadingListEnd}{\end{itemize}}
+\newcommand{\CVItemListStart}{\begin{itemize}}
+\newcommand{\CVItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%------------------------------------------------------------------------------
+% CV STARTS HERE  %
+%------------------------------------------------------------------------------
+\begin{document}
+
+%-----HEADING------------------------------------------------------------------
+
+\begin{minipage}[c]{0.8\textwidth}
+    \textbf{\Huge \scshape{Mauricio Barba da Costa}} \\ \vspace{1pt} 
+    \small{(561) 699 7023} |
+    \href{mailto:barba@mit.edu}{{barba@mit.edu}} |
+    \href{https://github.com/mercush}{{github.com/mercush}} |
+    \href{mauriciobarbadacosta.com}{{mauriciobarbadacosta.com}}
+\end{minipage}
+
+% Without picture
+%\begin{center}
+%    \textbf{\Huge \scshape Charles Rambo} \\ \vspace{1pt} %\scshape sets small capital letters, remove if desired
+%    \small +1 123-456-7890 $|$ 
+%    \href{mailto:you@provider.com}{\underline{you@provider.com}} $|$\\
+%    % Be sure to use a professional *personal* email address
+%    \href{https://linkedin.com/in/your-name-here}{\underline{linkedin.com/in/charles-rambo}} $|$
+%    % you should adjust you linked in profile name to be professional and recognizable
+%    \href{https://github.com/fizixmastr}{\underline{github.com/fizixmastr}}
+%\end{center}
+
+
+
+%-----EDUCATION----------------------------------------------------------------
+\section{Education}
+  \CVSubHeadingListStart
+%    \CVSubheading % Example
+%      {Degree Achieved}{Years of Study}
+%      {Institution of Study}{Where it is located}
+    \CVEducationSubheading
+      {{Massachusetts Institute of Technology}}{Cambridge, MA}
+      {\emph{\textbf{MEng}: AI \& Decision-making}}{September 2024 -- \textit{January 2026}}
+      {\emph{\textbf{BS}: Mathematics (18) and AI \& Decision-making (6-4)}}{September 2020 -- May 2024}
+      \begin{itemize}
+          \item \textbf{MEng GPA}{: 5.0/5.0} \, \textbf{BS GPA}{: 4.9/5.0}
+      \end{itemize}
+  \CVSubHeadingListEnd
+
+%-----WORK EXPERIENCE----------------------------------------------------------
+% Blockdaemon
+
+% 1. Worked with a premier crypto staking platform to build a tool that used optimize staking durations on several Proof of
+
+% Stake protocols and presented it to hedge funds
+
+% 2. Designed dashboards with (linear/decision tree) regressions and metrics on centralization of relayers in Flashbots auction
+
+%  and centralization of global Ethereum mining
+
+% Fabri
+
+% 1. Developing the firmware for a 3D printer as part of a startup. Using Python and C++.
+
+% qBraid
+
+% 1. Built Jupyter Notebook extensions for quantum physicists and learned React Native, AWS (S3, Lambda, EC2), and Kubernetes
+
+% The Underline
+
+% 1. ﻿Built a social media platform for people visiting The Underline--one fo the biggest urban development projects in South Florida. I learned VueJS, Heroku and MongoDB
+
+% 2. Wrote Solidity smart contracts to develop unique features for NFTs sold on The Underline digital marketplace.
+\section{Select Publications}
+  \begin{itemize}[leftmargin=0.5cm, label={}]
+    \item \textbf{Faster LLM Inference via Sequential Monte Carlo} \\
+      \small{\emph{Yahya Emara*, \textbf{Mauricio Barba da Costa}*, et al.}} \\
+      \small{90th percentile of reviews at COLM, 2026.}
+      \begin{itemize}[topsep=-4pt]
+        \CVItem{Conceived of the novel speculative decoding algorithm and led a team to build a high-performance inference engine that is \textbf{5.2x} faster than autoregressive decoding.}
+      \end{itemize}
+    \item \textbf{Improving Autoformalization via Cycle Consistency and Incremental Type-Checking Using Language-Model Probabilistic Programs} \\
+      \small{\emph{\textbf{Mauricio Barba da Costa}*, Fabian Zaiser*, et al.}} \\
+      \small{NeurIPS MATH-AI Workshop, 2025.}
+      \begin{itemize}[topsep=-4pt]
+        \CVItem{Accelerated decode speed of the \href{https://github.com/genlm/genlm-control}{GenLM} constrained generation inference engine, achieving \textbf{2.5x} lower latency and 22\% higher accuracy than autoregressive decoding in the formal verification domain.}
+      \end{itemize}
+    \item \textbf{People Use Fast, Flat Goal-Directed Simulation to Reason about Novel Problems} \\
+      \small{\emph{Katherine M. Collins*, Cedegao E. Zhang*, Lionel Wong*, \textbf{Mauricio Barba da Costa}*, Graham Todd*, et al.}} \\
+      \small{Accepted to Nature, 2026.}
+      \begin{itemize}[topsep=-4pt]
+        \CVItem{Accelerated heuristic search algorithm by \textbf{20x} by leveraging GPU compute with JAX, conceived of hypotheses about human cognition, and led statistical analyses.}
+      \end{itemize}
+  \end{itemize}
+\section{Work Experience}
+  \CVSubHeadingListStart
+    \CVSubheading
+      {GenWeb}{Cambridge, MA}
+      {\emph{Research Engineer}}{February 2026 -- Current}
+      \CVItemListStart
+        \CVItem{Building high-performance, low-latency systems at the intersection of language models, databases, and probabilistic inference at stealth startup founded by Reid Hoffman and Vikash Mansinghka.}
+        \CVItem{Work under NDA.}
+      \CVItemListEnd
+    \CVSubheading
+      {MIT 6.390 (IntroML)}{New York City, NY}
+      {\emph{Head TA}}{September 2024 -- December 2025}
+      \CVItemListStart
+        \CVItem{Led a team of 80 TAs to instruct a class of 400+ students. Tasks included devising new content goals, updating the course website, and teaching recitations.}
+        \CVItem{Managed a team of 20 TAs to update our website with new course material. (\href{https://introml.mit.edu}{https://introml.mit.edu}).}
+        \CVItem{Reduced average response time on question-answering platform from 2 hours to 23 minutes and reduced turnaround time to fix bugs on website from weeks to days.}
+    \CVItemListEnd
+    \CVSubheading
+      {Goldman Sachs}{New York City, NY}
+      {\emph{Quantitative Research Intern}}{June 2023 -- August 2023}
+      \CVItemListStart
+        \CVItem{Developed two low-latency signals for equities trading based on vector embeddings and transformer time series prediction.}
+        \CVItem{Leveraged multi-GPU clusters for training models with PyTorch.}
+        \CVItem{Return offer extended.}
+      \CVItemListEnd
+    \CVSubheading
+      {Fabri}{Cambridge, MA}
+      {\emph{Co-founder and CTO}}{August 2021 -- June 2023}
+      \CVItemListStart
+        \CVItem{Led team of four to build Fabri, a startup that 3d prints wax patterns for the metal casting industry.}
+        \CVItem{Raised  \$25,000 in funding from MIT's Sandbox innovation fund and \$200,000 from an angel investor.}
+        \CVItem{Established partnerships with foundries to cast our 3d prints parts and secured 2 contracts worth \$20k.}
+        \CVItem{Built system firmware for 3d printer and developed website leading to successful pitch demos to investors, the Sandbox program, and the NSF Spark i-Corps program.}
+    \CVItemListEnd
+    \CVSubheading
+      {Blockdaemon}{Miami, FL}
+      {\emph{Research Intern}}{May 2022 -- August 2022}
+        \CVItemListStart
+        \CVItem{Engineered and cleaned data from Remote Procedure Call (RPC) nodes.}
+        \CVItem{Used generalized linear models to predict future returns of staking protocols and detect trends in Ethereum mining, leading to increased in prediction accuracy by 20\%.}
+    \CVItemListEnd
+  \CVSubHeadingListEnd
+\section{Extracurricular Interests}
+\begin{itemize}
+    \CVItem{Long-distance biking -- Biked from San Francisco to LA and from Barcelona to Florence.}
+    \CVItem{Music -- Play piano for friends and family often and raised \$5,000 to replace MIT Theta Chi piano.}
+\end{itemize}
+\begin{comment}
+This section is compressed from the various skills sections that Euro CV
+recommends.
+\end{comment}
+\end{document}

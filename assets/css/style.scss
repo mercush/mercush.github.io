@@ -4,68 +4,43 @@
 @import "minima";
 
 // ── Palette ────────────────────────────────────────────────────────
-$eggshell:   #f6f1e5;  // warm eggshell paper
-$ink:        #211d16;  // near-black warm ink
-$muted:      #6e6450;  // faded ink for secondary text
-$rule:       #d9cfb8;  // hairline rules
-$accent:     #87422b;  // madder red, for links
-$paper-edge: #fffdf6;  // mat around the portrait
+$bg:     #ffffff;
+$ink:    #111111;
+$muted:  #777777;
+$rule:   #eaeaea;
 
 // ── Page ───────────────────────────────────────────────────────────
-html {
-  background-color: $eggshell;
+html, body {
+  background: $bg;
 }
 
 body {
-  font-family: "Newsreader", "Iowan Old Style", Georgia, serif;
-  font-optical-sizing: auto;
-  background-color: $eggshell;
+  font-family: "Newsreader", Georgia, serif;
   color: $ink;
-  font-size: 1.125rem;
+  font-size: 1.05rem;
   line-height: 1.65;
   margin: 0;
   padding: 0;
 }
 
-// A whisper of paper grain over everything
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: 999;
-  pointer-events: none;
-  opacity: 0.045;
-  mix-blend-mode: multiply;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-}
-
 ::selection {
-  background: rgba($accent, 0.18);
+  background: #eee;
 }
 
 .wrapper {
-  max-width: 760px;
+  max-width: 640px;
   margin: 0 auto;
   padding: 0 24px;
 }
 
 // ── Masthead ───────────────────────────────────────────────────────
 .masthead {
-  padding: 3.25rem 0 0;
-  text-align: center;
-
-  .wrapper {
-    border-bottom: 4px double rgba($ink, 0.75);
-    padding-bottom: 1.1rem;
-  }
+  padding: 4rem 0 0;
 }
 
 .masthead-title {
-  display: inline-block;
-  font-size: clamp(1.55rem, 7vw, 2.7rem);
+  font-size: 1.5rem;
   font-weight: 500;
-  line-height: 1.15;
-  letter-spacing: 0.01em;
   color: $ink;
   text-decoration: none;
 
@@ -77,20 +52,19 @@ body::before {
 
 // ── Content ────────────────────────────────────────────────────────
 .page-content {
-  padding: 2.6rem 0 1rem;
+  padding: 2rem 0 1rem;
 }
 
 a {
-  color: $accent;
+  color: inherit;
   text-decoration: underline;
   text-decoration-thickness: 1px;
-  text-decoration-color: rgba($accent, 0.4);
+  text-decoration-color: #bbb;
   text-underline-offset: 3px;
-  transition: text-decoration-color 0.2s ease, color 0.2s ease;
 
   &:hover {
-    color: darken($accent, 8%);
-    text-decoration-color: $accent;
+    color: $ink;
+    text-decoration-color: $ink;
   }
 }
 
@@ -99,13 +73,13 @@ h1, h2, h3, h4, h5, h6 {
   color: $ink;
 }
 
-// ── Intro: text left, portrait top right ──────────────────────────
+// ── Intro ──────────────────────────────────────────────────────────
 .intro {
   display: grid;
-  grid-template-columns: 1fr 240px;
-  column-gap: 2.4rem;
+  grid-template-columns: 1fr 140px;
+  column-gap: 2rem;
   align-items: start;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .intro-text {
@@ -114,60 +88,42 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .lede {
-  margin: 0.4rem 0 0;
-  font-size: 1.28rem;
-  line-height: 1.6;
-
-  em {
-    font-style: italic;
-  }
+  margin: 0;
+  font-size: 1.05rem;
 }
 
 .portrait {
   grid-column: 2;
   grid-row: 1;
-  margin: 0.5rem 0 0;
+  margin: 0;
 
   img {
     display: block;
     width: 100%;
-    aspect-ratio: 4 / 5;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
-    object-position: 50% 62%;
-    padding: 7px;
-    background: $paper-edge;
-    border: 1px solid $rule;
-    box-shadow: 0 14px 28px -18px rgba($ink, 0.55);
+    object-position: 50% 40%;
+    border-radius: 50%;
   }
 }
 
-// ── Section headings: centered small caps between rules ───────────
+// ── Section headings ───────────────────────────────────────────────
 .section-heading {
-  display: flex;
-  align-items: center;
-  gap: 1.1rem;
-  margin: 3rem 0 1.6rem;
-  font-size: 0.92rem;
-  font-weight: 600;
-  letter-spacing: 0.24em;
+  margin: 2.8rem 0 1.2rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: $ink;
-
-  &::before,
-  &::after {
-    content: "";
-    flex: 1;
-    border-top: 1px solid $rule;
-  }
+  color: $muted;
 }
 
 // ── Papers & talks ─────────────────────────────────────────────────
 .paper, .talk {
-  margin-bottom: 1.9rem;
+  margin-bottom: 1.5rem;
 
   h3 {
-    margin: 0 0 0.3rem;
-    font-size: 1.24rem;
+    margin: 0 0 0.15rem;
+    font-size: 1.05rem;
     font-weight: 500;
     line-height: 1.4;
 
@@ -176,38 +132,26 @@ h1, h2, h3, h4, h5, h6 {
       text-decoration: none;
 
       &:hover {
-        color: $accent;
         text-decoration: underline;
         text-decoration-thickness: 1px;
-        text-decoration-color: rgba($accent, 0.4);
         text-underline-offset: 3px;
       }
     }
   }
 
-  .authors {
+  .authors,
+  .venue {
     margin: 0;
-    font-size: 0.99rem;
+    font-size: 0.9rem;
     color: $muted;
-
-    .me {
-      color: $ink;
-      font-weight: 600;
-    }
   }
 
-  .venue {
-    margin: 0.18rem 0 0;
-    font-size: 0.99rem;
-    font-style: italic;
-    color: $muted;
+  .authors .me {
+    color: $ink;
+  }
 
-    a {
-      font-style: normal;
-      font-variant-caps: all-small-caps;
-      letter-spacing: 0.06em;
-      font-size: 1.02em;
-    }
+  .venue a {
+    color: $muted;
   }
 }
 
@@ -218,44 +162,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .post-meta {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: $muted;
-  font-style: italic;
 }
 
 // ── Colophon ───────────────────────────────────────────────────────
 .colophon {
-  margin-top: 3.5rem;
-  padding: 1.4rem 0 2.6rem;
-  text-align: center;
-  font-style: italic;
-  font-size: 0.92rem;
+  margin-top: 3rem;
+  padding: 0 0 3rem;
+  font-size: 0.8rem;
   color: $muted;
-
-  .wrapper {
-    border-top: 1px solid $rule;
-    padding-top: 1.4rem;
-  }
 
   p {
     margin: 0;
-  }
-}
-
-// ── Entrance ───────────────────────────────────────────────────────
-@media (prefers-reduced-motion: no-preference) {
-  .masthead,
-  .page-content,
-  .colophon {
-    animation: rise 0.7s ease both;
-  }
-
-  .page-content { animation-delay: 0.12s; }
-  .colophon { animation-delay: 0.2s; }
-
-  @keyframes rise {
-    from { opacity: 0; transform: translateY(10px); }
-    to   { opacity: 1; transform: none; }
   }
 }
 
@@ -268,16 +187,12 @@ h1, h2, h3, h4, h5, h6 {
   .portrait {
     grid-column: 1;
     grid-row: 1;
-    width: min(78%, 320px);
-    margin: 0 auto 1.4rem;
+    width: 120px;
+    margin: 0 0 1.2rem;
   }
 
   .intro-text {
     grid-column: 1;
     grid-row: 2;
-  }
-
-  .lede {
-    font-size: 1.16rem;
   }
 }
