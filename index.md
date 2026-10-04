@@ -43,13 +43,13 @@ layout: default
 <article class="paper">
   <h3><a href="https://popl26.sigplan.org/details/lafi-2026-papers/2/Sequential-Monte-Carlo-Program-Synthesis-with-Refinement-Proposals">Sequential Monte Carlo Program Synthesis with Refinement Proposals</a></h3>
   <p class="authors">Maddy Bowers, <span class="me">Mauricio Barba da Costa</span>, Xiaoyan Wang, Joshua B. Tenenbaum, Vikash K. Mansinghka, Armando Solar-Lezama, Alexander K. Lew</p>
-  <p class="venue">LAFI workshop at POPL, 2026 &mdash; <a href="https://popl26.sigplan.org/details/lafi-2026-papers/2/Sequential-Monte-Carlo-Program-Synthesis-with-Refinement-Proposals">paper</a></p>
+  <p class="venue">LAFI workshop at POPL, 2026 &mdash; <a href="https://popl26.sigplan.org/details/lafi-2026-papers/2/Sequential-Monte-Carlo-Program-Synthesis-with-Refinement-Proposals">link</a></p>
 </article>
 
 <article class="paper">
   <h3><a href="https://neurips.cc/virtual/2025/loc/san-diego/131104">Improving Autoformalization via Cycle Consistency and Incremental Type-Checking Using Language-Model Probabilistic Programs</a></h3>
   <p class="authors"><span class="me">Mauricio Barba da Costa</span>*, Fabian Zaiser*, Katherine M. Collins, Romir Patel, Timothy J. O'Donnell, Alexander K. Lew, Joshua B. Tenenbaum, Vikash K. Mansinghka, Cameron E. Freer</p>
-  <p class="venue">NeurIPS MATH-AI Workshop, 2025 &mdash; <a href="https://neurips.cc/virtual/2025/loc/san-diego/131104">paper</a></p>
+  <p class="venue">NeurIPS MATH-AI Workshop, 2025 &mdash; <a href="https://neurips.cc/virtual/2025/loc/san-diego/131104">link</a></p>
 </article>
 
 <article class="paper">
