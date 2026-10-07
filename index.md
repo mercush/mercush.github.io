@@ -16,7 +16,7 @@ layout: default
 <article class="paper">
   <h3><a href="{{ '/iclr2027_conference.pdf' | relative_url }}">A Closer Look at Power Sampling</a></h3>
   <p class="authors"><span class="me">Mauricio Barba da Costa</span>, Ryan Cotterell</p>
-  <p class="venue">Preprint &mdash; <a href="{{ '/iclr2027_conference.pdf' | relative_url }}">paper</a></p>
+  <p class="venue">Preprint</p>
 </article>
 
 <article class="paper">
